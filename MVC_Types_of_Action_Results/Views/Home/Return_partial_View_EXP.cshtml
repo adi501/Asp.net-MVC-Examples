@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Partial View Demo";
+}
+
+<h2>Partial View Demo</h2>
+<br />
+<div>
+    <h4> Html.Partial:</h4> method return the string output, you can put out put into the variable and manipulate it if required.<br />
+    @Html.Partial("PartialDemo")
+</div>
+<br />
+<div>
+    <h4> Html.RenderPartial:</h4>method will directly written to the http response stream.<br />
+    @{Html.RenderPartial("PartialDemo");  }
+
+</div>
+<br />
+<div>
+    <h4> Html.RenderAction:</h4> If you want to call action method of partial view then you can use Html.RenderAction method.<br />
+    @{Html.RenderAction("PartialDemo");}
+</div>

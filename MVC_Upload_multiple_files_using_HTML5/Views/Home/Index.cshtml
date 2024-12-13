@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <span>Select File:</span>
+        <input type="file" name="postedFiles" multiple="multiple" />
+        <hr />
+        <input type="submit" value="Upload" />
+        <br />
+        <span style="color:green">@Html.Raw(ViewBag.Message)</span>
+    }
+</div>
+
+
+

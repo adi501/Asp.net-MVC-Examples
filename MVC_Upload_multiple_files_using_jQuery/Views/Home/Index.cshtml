@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Uploadify/jquery-1.3.2.min.js"></script>
+    <script src="~/Uploadify/jquery.uploadify.js"></script>
+    <link href="~/Uploadify/uploadify.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+            $("#postedFile").fileUpload({
+                'uploader': '~/Uploadify/uploader.swf',
+                'cancelImg': '~/Uploadify/cancel.png',
+                'buttonText': 'Browse Files',
+                'script': '/Home/Index/',
+                'folder': 'Uploads',
+                'fileDesc': 'Image Files',
+                'fileExt': '*.jpg;*.jpeg;*.gif;*.png',
+                'multi': true,
+                'auto': true
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <input type="file" id="postedFile" name="postedFile" />
+    </div>
+</body>
+</html>
