@@ -58,4 +58,7 @@ https://github.com/adi501/Asp.net-MVC-Examples/tree/master/MVC_filters_Authoriza
 **Exception filters in MVC**
 
 https://github.com/adi501/Asp.net-MVC-Examples/tree/master/MVC_filters_Exception_filters
+
+**Result filters in MVC**
+
 https://github.com/adi501/Asp.net-MVC-Examples/tree/master/MVC_filters_Result_filters
